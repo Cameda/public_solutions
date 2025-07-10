@@ -90,7 +90,7 @@ helm upgrade --install ingress-nginx ingress-nginx \
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Ingress controller with internal LB.
-```
+
 Способ 1: 
 vi values.yaml
 ```
@@ -104,6 +104,8 @@ controller:
         yandex.cloud/load-balancer-type: internal
         yandex.cloud/subnet-id: <идентификатор_подсети>
 ```
+
+### Установка.
 ```
 helm install ingress-nginx -f values.yaml ingress-nginx/ingress-nginx
 ```
